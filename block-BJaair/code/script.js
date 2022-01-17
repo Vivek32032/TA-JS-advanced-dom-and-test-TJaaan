@@ -1,6 +1,6 @@
-let addNoticeBtn = document.querySelector("#addNoticeBtn");
+let addNotice = document.querySelector("#addNotice");
 let root = document.querySelector("ul")
-addNoticeBtn.addEventListener("click",(event)=>{
+addNotice.addEventListener("submit",(event)=>{
     event.preventDefault();
     addNotice();
 })
@@ -15,7 +15,7 @@ function addNotice(){
     h3.innerText= title.value;
     h3.addEventListener("dblclick",(event)=>{
        let textarea = document.createElement("textarea");
-    
+       
     })
     li.append(span,h3);
     let category = document.querySelector("#category");
