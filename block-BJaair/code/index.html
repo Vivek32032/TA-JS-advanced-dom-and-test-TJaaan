@@ -22,24 +22,24 @@
             
         </li>
        </ul>
-        <div class="add_notice" id="addNotice">
+        <form class="add_notice" id="addNotice">
                  <h2>ADD NOTICE</h2>
 
-        <input class="width_full" type="text" placeholder="Enter notice title" id="title">
+        <input class="width_full" name="title" type="text" placeholder="Enter notice title" id="title">
 
-        <select id="category" class="width_full">
+        <select id="category" name="category" class="width_full">
             <option value="volvo">Volvo</option>
             <option value="saab">Saab</option>
             <option value="opel">Opel</option>
             <option value="audi">Audi</option>
         </select>
-        <button id="addNoticeBtn">Add Notice</button>
-        </div>
+        <button id="addNoticeBtn" type="submit">Add Notice</button>
+        </form>
    
     </main>
     <footer>
     </footer>
-    <script src="./script.js"></script>
+    <script src="./sol.js"></script>
 </body>
 
 </html>
