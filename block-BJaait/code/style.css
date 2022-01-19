@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,800");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* custom css */
+body {
+  background-color: #5c5ca8;
+}
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+  padding: 25px;
+  margin: 2rem 0;
+}
+
+form {
+  width: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+
+i {
+  position: absolute;
+  right: 10px;
+  /* left: 90%; */
+  top: 15px;
+  z-index: 5;
+  font-size: 2rem;
+}
+
+input, li {
+  border: 0;
+  width: 100%;
+  padding: 10px;
+  font-size: 2rem;
+}
+
+ul {
+  width: 500px;
+  margin: 20px auto;
+}
+
+li {
+  /* border: 2px solid rgb(20, 20, 102); */
+  background-color: #cc8d76;
+  margin: 5px 0;
+}
+
+body {
+  background-color: #0072ff;
+}
+
+body h1 {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  font-size: 50px;
+  font-weight: normal;
+}
+
+body .adder {
+  position: relative;
+  width: 250px;
+  margin: 0px auto;
+  display: block;
+  border: 0;
+}
+
+body .adder ::-webkit-input-placeholder {
+  color: #cecece;
+}
+
+body .adder .input {
+  outline: none;
+  border: 1px solid white;
+  background-color: #0072ff;
+  color: white;
+  height: 50px;
+  width: 250px;
+  padding-left: 10px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  margin-left: -5px;
+}
+
+body .adder span {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.8;
+  cursor: pointer;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  color: white;
+  will-change: transform;
+}
+
+body .adder span:hover {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+body ul {
+  padding: 0px;
+}
+
+body ul .draggable {
+  will-change: transform;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  height: 50px;
+  list-style-type: none;
+  margin: 10px;
+  background-color: white;
+  color: #0072ff;
+  width: 250px;
+  line-height: 3.2;
+  padding-left: 10px;
+  cursor: move;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin: 10px auto;
+  position: relative;
+}
+
+body ul .draggable:after {
+  content: 'drag me';
+  right: 7px;
+  font-size: 10px;
+  position: absolute;
+  cursor: pointer;
+  line-height: 5;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0.48, 0.72, 0.62, 1.5);
+          transition-timing-function: cubic-bezier(0.48, 0.72, 0.62, 1.5);
+  -webkit-transform: translateX(120%);
+          transform: translateX(120%);
+  opacity: 0;
+}
+
+body ul .draggable:hover:after {
+  opacity: 1;
+  -webkit-transform: translate(0);
+          transform: translate(0);
+}
+
+.over {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+/*# sourceMappingURL=style.css.map */
