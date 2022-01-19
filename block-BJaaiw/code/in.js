@@ -8,8 +8,8 @@ let ctx = canvas.getContext("2d");
 
 var x = 100;
 var y = 300;
-var dx = 2;
-var dy = -2;
+var dx = 5;
+var dy = -5;
 var ballRadius = 50;
 var color = "green";
 var paddleHeight = 50;
@@ -127,20 +127,19 @@ function checkBoundary(){
             dy = -dy;
         }
         else {
-            // lives--;
+            lives--;
             if(!lives) {
               alert("GAME OVER");
               lives=3;
-            //   document.location.reload();
+              document.location.reload();
 
             }
             else {
                  x = 100;
                  y = 300;
-                 dx = 2;
-                 dy = -2;
+                 dx = 5;
+                 dy = -5;
               paddleX = (canvas.width-paddleWidth);
-              lives--;
             }
           }
         }}
