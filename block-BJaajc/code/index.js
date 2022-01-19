@@ -8,14 +8,14 @@ function isPalindrome(text){
    return text === reverseText;
 }
 
-function getCircumfrence(radius){
-   let circum = 2*Math.PI*radius;
+function getCircumference(radius){
+   let circum = Math.floor(2*Math.PI*radius);
    return `The circumference is ${circum}`;
 }
 
 function getArea(radius){
-    let area  = Math.PI*radius*radius;
+    let area  = Math.floor(Math.PI*radius*radius);
     return `The area is ${area}`;
 }
 
-module.exports = getFullName;
+module.exports = {getFullName,isPalindrome,getCircumference,getArea};
