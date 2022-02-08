@@ -15,6 +15,10 @@ test('abba gives true',() => {
 })
 
 test('abba gives true',() => {
+    expect(isPalindrome("reviver")).toBe(true);
+})
+
+test('abba gives true',() => {
     expect(isPalindrome("abba ")).not.toBe(true);
 })
 
